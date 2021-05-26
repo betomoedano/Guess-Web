@@ -17,7 +17,7 @@ function MainContent() {
             ></iframe>
 
             <h1 className="text-xl md:text-5xl">Token address:</h1>
-            <p className="text-sm px-10 pt-5 pb-10 font-size-10">0x1bFF850c32bEe2A47451E31f8BF31A14e62C7F03</p>
+            <p className="text-sm text-center pt-5 pb-10 font-size-10">0x1bFF850c32bEe2A47451E31f8BF31A14e62C7F03</p>
             <Btn
                 name="Buy Now"
                 link="https://metamask.io/"
