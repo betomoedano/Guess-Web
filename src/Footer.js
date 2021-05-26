@@ -3,7 +3,7 @@ import "./index.css";
 
 function Footer() {
     return (
-        <footer className="">
+        <footer className="pt-20">
             <h3>guesscrypto@gmail.com</h3>
             <h6>Created by Alberto Moedano</h6>
         </footer>
