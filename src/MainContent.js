@@ -1,11 +1,25 @@
 import React from "react";
 import Btn from "./Btn";
+import { motion } from "framer-motion";
 
 function MainContent() {
+    const variants = {
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 },
+    }
+
     return (
         <div>
-            <h1 className="text-5xl mx-10 pb-10 pt-20 md:text-7xl">Good Game Coin</h1>
-            <h1 className="text-4xl pb-8 md:text-5xl">(GGS)</h1>
+            <motion.h1
+                className="text-5xl mx-10 pb-10 pt-20 md:text-7xl"
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 2 }}
+                variants={variants}
+            >Good Game Coin
+            </motion.h1>
+            <h1
+                className="text-4xl pb-8 md:text-5xl">(GGS)</h1>
             <p className="text-md px-10 font-size-10">Crypto Guess is a revolutionary way to earn crypto by guessing, yeah! literally guessing</p>
             <iframe
                 className="p-10"

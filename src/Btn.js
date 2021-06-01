@@ -1,11 +1,18 @@
 import React from "react"
+import { motion } from "framer-motion";
 
-function Btn (props) {
-    console.log(props)
+function Btn(props) {
     return (
-        <div className="w-28 py-3 border-2 rounded-lg inline-block hover:bg-white hover:text-gray-600">
-            <a href={props.link}><h3>{props.name}</h3></a>
-        </div>
+
+        <motion.a
+            href={props.link}
+            className="w-28 py-3 border-2 rounded-lg inline-block hover:bg-white hover:text-gray-600"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+
+        >
+            {props.name}
+        </motion.a>
     )
 }
 
